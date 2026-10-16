@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #111111;
+  --color-brand-bg: #F7F5F0;
+  --color-brand-border: #E8E0D2;
+  --color-brand-card: #FFFFFF;
+  --color-brand-muted: #6A665E;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #F7F5F0;
+  color: #111111;
+  min-height: 100vh;
+}
+
+button:not(:disabled),
+[role="button"],
+a[href],
+select:not(:disabled) {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.98);
+}
