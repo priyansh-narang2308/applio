@@ -17,6 +17,20 @@ A minimal, full-stack job application tracker built with React (Vite + Tailwind 
 - **Database**: MongoDB Atlas with Mongoose
 - **Auth**: JWT (jsonwebtoken) & bcryptjs
 
+## Environment Variables
+
+### Backend (`backend/.env`)
+```env
+PORT=5001
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+```
+
+### Frontend (`frontend/.env`)
+```env
+VITE_API_BASE_URL=http://localhost:5001/api
+```
+
 ## Quick Start
 
 ### Run Both Frontend & Backend (One Command)
